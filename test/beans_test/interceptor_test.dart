@@ -178,8 +178,8 @@ void interceptor() {
       DDI.instance.registerSingleton(
         () => D(),
         decorators: [
-          (instance) => E(instance),
-          (instance) => F(instance),
+          (D instance) => E(instance),
+          (D instance) => F(instance),
         ],
         interceptors: {K},
       );
